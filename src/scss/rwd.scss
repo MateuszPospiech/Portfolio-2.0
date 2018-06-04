@@ -1,0 +1,36 @@
+.wrapper {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media (min-width: 576px) {
+    .wrapper {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 720px;
+    }
+    h2{
+    margin-bottom: 0.1em;
+    font-size: 48px;
+    font-size: 4.8rem;
+    line-height: 1.2em;
+    font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    letter-spacing: -0.07em;
+    }
+}
+
+@media (min-width: 992px) {
+    .wrapper {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1230px) {
+    .wrapper {
+        max-width: 1230px;
+    }
+}

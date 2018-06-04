@@ -1,0 +1,28 @@
+.wrapper {
+  margin: 0 auto;
+  padding: 0 15px; }
+
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 540px; } }
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 720px; }
+  h2 {
+    margin-bottom: 0.1em;
+    font-size: 48px;
+    font-size: 4.8rem;
+    line-height: 1.2em;
+    font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    letter-spacing: -0.07em; } }
+
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 960px; } }
+
+@media (min-width: 1230px) {
+  .wrapper {
+    max-width: 1230px; } }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInJ3ZC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksZUFBYztFQUNkLGdCQUFlLEVBQ2xCOztBQUVEO0VBQ0k7SUFDSSxpQkFBZ0IsRUFDbkIsRUFBQTs7QUFHTDtFQUNJO0lBQ0ksaUJBQWdCLEVBQ25CO0VBQ0Q7SUFDQSxxQkFBb0I7SUFDcEIsZ0JBQWU7SUFDZixrQkFBaUI7SUFDakIsbUJBQWtCO0lBQ2xCLCtFQUE4RTtJQUM5RSx3QkFBdUIsRUFDdEIsRUFBQTs7QUFHTDtFQUNJO0lBQ0ksaUJBQWdCLEVBQ25CLEVBQUE7O0FBR0w7RUFDSTtJQUNJLGtCQUFpQixFQUNwQixFQUFBIiwiZmlsZSI6InJ3ZC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIud3JhcHBlciB7XHJcbiAgICBtYXJnaW46IDAgYXV0bztcclxuICAgIHBhZGRpbmc6IDAgMTVweDtcclxufVxyXG5cclxuQG1lZGlhIChtaW4td2lkdGg6IDU3NnB4KSB7XHJcbiAgICAud3JhcHBlciB7XHJcbiAgICAgICAgbWF4LXdpZHRoOiA1NDBweDtcclxuICAgIH1cclxufVxyXG5cclxuQG1lZGlhIChtaW4td2lkdGg6IDc2OHB4KSB7XHJcbiAgICAud3JhcHBlciB7XHJcbiAgICAgICAgbWF4LXdpZHRoOiA3MjBweDtcclxuICAgIH1cclxuICAgIGgye1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMC4xZW07XHJcbiAgICBmb250LXNpemU6IDQ4cHg7XHJcbiAgICBmb250LXNpemU6IDQuOHJlbTtcclxuICAgIGxpbmUtaGVpZ2h0OiAxLjJlbTtcclxuICAgIGZvbnQtZmFtaWx5OiBcIm5lb3NhbnMgcmVndWxhclwiLCBcIkhlbHZldGljYSBOZXVlXCIsIEhlbHZldGljYSwgQXJpYWwsIFNhbnMtc2VyaWY7XHJcbiAgICBsZXR0ZXItc3BhY2luZzogLTAuMDdlbTtcclxuICAgIH1cclxufVxyXG5cclxuQG1lZGlhIChtaW4td2lkdGg6IDk5MnB4KSB7XHJcbiAgICAud3JhcHBlciB7XHJcbiAgICAgICAgbWF4LXdpZHRoOiA5NjBweDtcclxuICAgIH1cclxufVxyXG5cclxuQG1lZGlhIChtaW4td2lkdGg6IDEyMzBweCkge1xyXG4gICAgLndyYXBwZXIge1xyXG4gICAgICAgIG1heC13aWR0aDogMTIzMHB4O1xyXG4gICAgfVxyXG59Il19 */
