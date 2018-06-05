@@ -7,7 +7,7 @@ body{
     font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
 }  
 a{
-    color: $color-third;
+    color: $color-text-header;
     display: flex;
 }
 .row{
@@ -17,6 +17,12 @@ a{
 .col-12{
     flex: 1;
 }
+
+/***HEADER***/
+#header{
+    background-color: $color-bg-header;
+}
+/***END HEADER***/
 
 /***About me***/
 .about-me__distinction{
