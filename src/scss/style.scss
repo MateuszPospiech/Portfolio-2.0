@@ -1,10 +1,10 @@
-@import "reset";
 @import "settings";
 
 body{
     background-color: $color-bg;
     color: $color-text;
     font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 18px;
 }  
 a{
     color: $color-text-header;
@@ -14,19 +14,49 @@ a{
     display: flex;
     flex-wrap: wrap;
 }
-.col-12{
+.col-1{
     flex: 1;
 }
 
 /***HEADER***/
 #header{
     background-color: $color-bg-header;
+    
+    .header__center{
+        display: flex;
+        align-items: center; 
+    }
+    
+    .main-nav{
+        display: flex;
+        width: 100%;
+    
+        li{
+            font-size: 1.25rem;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
 /***END HEADER***/
+ 
+/***MAIN***/
+.about-me{
+    background-color: $color-bg;
+    padding: 40px 0px;
+    border-bottom: 1px solid $border-bottom;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    
+    .col-1{
+        padding: 0 15px;
+    }
+}
+/***END MAIN***/
 
 /***About me***/
 .about-me__distinction{
-    font-size: 2.6rem;
+    font-size: 1.8rem;
     color: $color-text-second;
     line-height: 1.3em;
     margin-bottom: 0.7em;
