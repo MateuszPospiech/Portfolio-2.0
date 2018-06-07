@@ -21,10 +21,14 @@ a{
 /***HEADER***/
 #header{
     background-color: $color-bg-header;
+    padding: 10px 0;
     
     .header__center{
         display: flex;
         align-items: center; 
+    }
+    a{
+        width: fit-content;
     }
     
     .main-nav{
@@ -34,7 +38,7 @@ a{
         li{
             font-size: 1.25rem;
             flex: 1;
-            display: flex;
+//            display: flex;
             justify-content: center;
         }
     }
@@ -42,23 +46,48 @@ a{
 /***END HEADER***/
  
 /***MAIN***/
+    /*About me section*/
 .about-me{
     background-color: $color-bg;
     padding: 40px 0px;
     border-bottom: 1px solid $border-bottom;
     box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
     
+    .about-me__distinction{
+        font-size: 1.8rem;
+        color: $color-text-second;
+        line-height: 1.3em;
+        margin-bottom: 0.7em;
+    }
+    
     .col-1{
         padding: 0 15px;
     }
 }
+    /*END About me section*/
+
+    /*Portfolio section*/
+.portfolio{
+    background-color: $color-bg-dark;
+    .portfolio__project{
+        display: flex;
+        flex-wrap: wrap;
+        
+        .portfolio__project__item{
+            flex:1;
+            list-style-type: none;
+//            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            
+//            &:hover{
+//                cursor: pointer;
+//            }
+        }
+    }
+    
+}
+    /*END Portfolio section*/
 /***END MAIN***/
 
-/***About me***/
-.about-me__distinction{
-    font-size: 1.8rem;
-    color: $color-text-second;
-    line-height: 1.3em;
-    margin-bottom: 0.7em;
-}
-/***END About me***/
+
