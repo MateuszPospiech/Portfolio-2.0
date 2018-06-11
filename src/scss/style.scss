@@ -74,20 +74,53 @@ a{
         flex-wrap: wrap;
         
         .portfolio__project__item{
+            display: flex;
+            align-items: flex-start;
             flex:1;
             list-style-type: none;
 //            display: flex;
             justify-content: center;
-            padding: 10px 0;
+            padding: 10px 5px;
             
-//            &:hover{
-//                cursor: pointer;
-//            }
+            &:hover{
+                cursor: pointer;
+            }
+            .portfolio__project__item--app-project{
+                width: 320px;
+                text-align: center;
+            }
         }
     }
     
 }
     /*END Portfolio section*/
+
 /***END MAIN***/
+
+/***FOOTER***/
+#footer {
+    background-color: $color-bg-footer;
+    padding: 20px 0;
+    color: $color-text-third;
+    
+    .footer__copyright{
+        justify-content: center;
+    }
+    
+    a{
+        text-decoration: none;
+        color: #e7c305;
+        -webkit-transition: 0.4s all;
+        transition: 0.4s all;
+        
+        &:hover {
+            color: #821821;
+        }
+    }
+}
+/***END FOOTER***/
+
+
+
 
 
