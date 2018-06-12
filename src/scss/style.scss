@@ -17,6 +17,12 @@ a{
 .col-1{
     flex: 1;
 }
+li{
+    list-style-type: none;
+}
+section{
+    padding: 40px 0;
+}
 
 /***HEADER***/
 #header{
@@ -38,7 +44,6 @@ a{
         li{
             font-size: 1.25rem;
             flex: 1;
-//            display: flex;
             justify-content: center;
         }
     }
@@ -49,9 +54,7 @@ a{
     /*About me section*/
 .about-me{
     background-color: $color-bg;
-    padding: 40px 0px;
     border-bottom: 1px solid $border-bottom;
-    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
     
     .about-me__distinction{
         font-size: 1.8rem;
@@ -69,31 +72,77 @@ a{
     /*Portfolio section*/
 .portfolio{
     background-color: $color-bg-dark;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
     .portfolio__project{
-        display: flex;
-        flex-wrap: wrap;
-        
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+    }
+    @media(min-width: 768px){
+        .portfolio__project{
+            justify-content: space-between;
+        }
+    }
         .portfolio__project__item{
             display: flex;
             align-items: flex-start;
-            flex:1;
-            list-style-type: none;
-//            display: flex;
-            justify-content: center;
             padding: 10px 5px;
             
-            &:hover{
-                cursor: pointer;
-            }
             .portfolio__project__item--app-project{
                 width: 320px;
                 text-align: center;
+                opacity: 0.6;
+                transition: opacity 0.2s ease-in-out;
+                
+                &:hover{
+                    cursor: pointer;
+                    opacity: 1;
+                }
             }
         }
     }
     
-}
     /*END Portfolio section*/
+    
+    /*Skills section*/  
+.skills{
+    background-color: $color-bg;
+    border-top: 1px solid $border-bottom;
+    box-shadow: 0px -1px 3px 0px rgba(0, 0, 0, 0.1);
+
+    .skills__level{
+        padding: 20px 0;
+        margin-bottom: 10px;
+        
+        
+        h3{
+            width: 250px;
+        }
+        
+        ul{
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+            
+            li{
+                width: 150px;
+                
+            }
+        }
+    }
+    .skills__level--adv{
+        border-bottom: solid 1px $color-first;
+     }
+    .skills__level--mid{
+        border-bottom: solid 1px $color-secound;
+     }
+     .skills__level--ele{
+         border-bottom: solid 1px $color-third;
+     }
+}      
+
+
+    /*END Skills section*/  
 
 /***END MAIN***/
 
@@ -102,6 +151,7 @@ a{
     background-color: $color-bg-footer;
     padding: 20px 0;
     color: $color-text-third;
+    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
     
     .footer__copyright{
         justify-content: center;
