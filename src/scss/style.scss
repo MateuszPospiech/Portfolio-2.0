@@ -197,6 +197,20 @@ section{
 .contact{
     background-color: $color-bg-dark;
     box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    
+    .contact__images{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        color: $color-third;
+        
+        a{
+            color: $color-text;
+            margin-bottom: 10px;
+            
+        }
+    }
 }
     /*END Contact section*/
 /***END MAIN***/
