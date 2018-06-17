@@ -74,8 +74,6 @@ section{
     background-color: $color-bg-dark;
     box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
     .portfolio__project{
-            display: flex;
-            flex-wrap: wrap;
             justify-content: center;
     }
     @media(min-width: 768px){
@@ -170,9 +168,7 @@ section{
         }
         
         ul{
-            display: flex;
             flex: 1;
-            flex-wrap: wrap;
             
             li{
                 width: 150px;
@@ -203,7 +199,8 @@ section{
         flex-direction: column;
         align-items: center;
         padding: 20px 0;
-        color: $color-third;
+        min-width: 300px;
+        color: $color-first;
         
         a{
             color: $color-text;
@@ -220,7 +217,6 @@ section{
     background-color: $color-bg-footer;
     padding: 20px 0;
     color: $color-text-third;
-//    box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
     
     .footer__copyright{
         justify-content: center;
