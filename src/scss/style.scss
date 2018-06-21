@@ -47,6 +47,36 @@ section{
             justify-content: center;
         }
     }
+    .icon-nav{
+        width: 40px;
+        height: 35px;
+        border: 0;
+        border-top: 5px solid #fff;
+        background: transparent;
+        position: relative;
+        transition: 0.3s transform linear;
+    }
+    .icon-nav::before,
+    .icon-nav::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 5px solid #fff;
+        transform: translateY(10px);
+    }
+    .icon-nav::after{
+        transform: translateY(25px);
+        transition: 0.3s transform linear;
+    }
+    .icon-nav:focus{
+        transform: rotate(225deg) translateY(5px);
+        border: none;
+    }
+     .icon-nav:focus::after{
+        transform: rotate(-90deg) translateX(-10px);
+    }
 }
 /***END HEADER***/
  
