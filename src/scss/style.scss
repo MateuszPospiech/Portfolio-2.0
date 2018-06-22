@@ -54,7 +54,7 @@ section{
         border-top: 5px solid #fff;
         background: transparent;
         position: relative;
-        transition: 0.3s transform linear;
+        transition: 0.5s transform linear;
     }
     .icon-nav::before,
     .icon-nav::after{
@@ -68,7 +68,7 @@ section{
     }
     .icon-nav::after{
         transform: translateY(25px);
-        transition: 0.3s transform linear;
+        transition: 0.5s transform linear;
     }
     .icon-nav:focus{
         transform: rotate(225deg) translateY(5px);
