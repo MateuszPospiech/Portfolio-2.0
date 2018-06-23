@@ -32,21 +32,32 @@ section{
     .header__center{
         display: flex;
         align-items: center; 
+        justify-content: flex-end;
     }
     a{
         width: fit-content;
     }
     
     .main-nav{
-        display: flex;
-        width: 100%;
-    
-        li{
-            font-size: 1.25rem;
-            flex: 1;
-            justify-content: center;
+        display: none;
+    }
+    @media (min-width: 991px){
+        
+        .main-nav{
+            display: flex;
+            width: 100%;
+
+            li{
+                font-size: 1.25rem;
+                flex: 1;
+                justify-content: center;
+            }
+        }
+        .icon-nav{
+            display: none;
         }
     }
+    
     .icon-nav{
         width: 40px;
         height: 35px;
@@ -93,6 +104,13 @@ section{
         margin-bottom: 0.7em;
     }
     
+    p {
+        line-height: 1.7;
+        margin-bottom: 0.4em;
+        letter-spacing: 0.5px;
+        font-size: 16px;
+    }
+    
     .col-1{
         padding: 0 15px;
     }
@@ -110,6 +128,10 @@ section{
         .portfolio__project{
             justify-content: space-between;
         }
+    }
+    img {
+        border: 1px solid #eee;
+        border-radius: 4px;
     }
         .portfolio__project__item{
             display: flex;
