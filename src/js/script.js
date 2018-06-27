@@ -16,8 +16,6 @@ function addActive(){
     console.log('asd');
     mainNav.classList.toggle('active');
     navButton.classList.toggle('icon-nav-Active');
-
-    
 }
 
 /***END NAV Mobile***/
