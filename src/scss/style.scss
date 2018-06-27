@@ -39,7 +39,6 @@ section{
     .header__center{
         display: flex;
         position: absolute;
-        top: 50px;
         flex-direction: column;
         align-items: center;
         line-height: 80px;
@@ -47,7 +46,6 @@ section{
         top: 120px;
         left: -100%;
         background: #333;
-        font-size: 28px;
         transition: left 0.5s;
     }
     .active{
@@ -57,9 +55,15 @@ section{
     ul{
         width: 100%;
         
+        
         a{
             width: 100%;
             justify-content: center;
+            transition: color .25s ease-in-out;
+            &:hover{
+                color: $color-third;
+                
+            }
         }
     }
     
@@ -67,7 +71,7 @@ section{
     @media (min-width: 991px){
         
          .header__center{
-             display: flex;
+            display: flex;
             background: transparent;
             position: inherit;
             flex-direction: row;
@@ -75,15 +79,11 @@ section{
              ul{
                  display: flex;
                  width: 100%;
+                 justify-content: space-around;
              }
              
             li{
-                font-size: 1.25rem;
-                flex: 1;
-                justify-content: center;
-            }
-             a{
-                width: fit-content;
+                font-size: 1.4rem;
             }
         }
         .icon-nav{
@@ -126,6 +126,7 @@ section{
 /***END HEADER***/
  
 /***MAIN***/
+
     /*About me section*/
 .about-me{
     background-color: $color-bg;
@@ -144,10 +145,15 @@ section{
         letter-spacing: 0.5px;
         font-size: 16px;
     }
-    
-    .col-1{
-        padding: 0 15px;
+    img{
+        margin: 0 auto;
     }
+    @media(min-width: 768px){
+        .col-1{
+            padding: 0 15px;
+        }
+    }
+    
 }
     /*END About me section*/
 
