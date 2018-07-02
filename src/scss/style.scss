@@ -24,6 +24,19 @@ section{
     padding: 40px 0;
 }
 
+h2{
+    font-size: 2.8rem;
+    margin-bottom: 0.1em;
+    line-height: 1.2em;
+    font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    letter-spacing: -0.07em;
+}
+   @media (min-width: 768px) {
+    h2{
+        font-size: 4.8rem;
+    }
+}
+
 /***HEADER***/
 #header{
     background-color: $color-bg-header;
