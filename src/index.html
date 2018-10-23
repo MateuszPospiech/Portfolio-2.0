@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Mateusz Pośpiech - Portfolio</title>
     
-    <meta name="description" content = "Mateusz Pośpiech, Webmaster - portfolio.">
-<!--    <meta name="DC.description" lang="pl" content="Mateusz Pośpiech, Webmaster - portfolio.">-->
+    <meta name="description" content="Mateusz Pośpiech, Webmaster - portfolio. Tworzenie stron, blogów oraz sklepów internetowych. WordPress, PrestaShop, OpenCart. React, GatsbyJS">
+    <meta name="DC.description" lang="pl" content="Mateusz Pośpiech, Webmaster - portfolio. Tworzenie stron, blogów oraz sklepów internetowych. WordPress, PrestaShop, OpenCart. React, GatsbyJS">
     
     <meta name="author" content="Mateusz Pośpiech">
     <meta name="DC.creator" content="Mateusz Pośpiech">
@@ -28,6 +28,20 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/rwd.css">
     <!-- endbuild -->
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113419514-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-113419514-1');
+
+    </script>
 </head>
 <body>
    
@@ -61,9 +75,9 @@
                     <div class="col-1">
                     
                     <h2>o mnie</h2>
-                        <p class="about-me__distinction">Cześć! Nazywam się Mateusz Pośpiech. Jestem webmasterem pracującym w Katowicach.</p>
+                        <p class="about-me__distinction">Cześć! Nazywam się Mateusz Pośpiech. Jestem webmasterem pracującym w Warszawie.</p>
                         <p>Moja przygoda z językami programowania zaczęła się 10 lat temu, gdzie w technikum tworzyłem proste gierki konsolowe oraz obiektowe w Pascalu i C++. Ukończyłem technikum zdobywając tytuł Technika Informatyka, a następnie poszedłem na studia o kierunku Informatyka i Ekonometria na Uniwersytecie Ekonomicznym w Katowicach, gdzie zainteresowałem się technologiami webowymi. Tam tworzyłem swoje pierwsze proste strony internetowe, w konsekwencji czego znalazłem prace na stanowisku webmastera.</p>
-                        <p>Obecnie prócz pracy, poszerzam swoją wiedzę z języka JavaScript. Tworze własne projekty przy wsparciu narzędzia Gulp. Wolny czas uwielbiam spędzać aktywnie jeżdżąc na rolkach lub chodząc po górach.</p>
+                        <p>Obecnie prócz pracy, poszerzam swoją wiedzę z języka JavaScript oraz frameworka React. Tworze własne projekty przy wsparciu narzędzia Gulp. Wolny czas uwielbiam spędzać aktywnie jeżdżąc na rolkach lub chodząc po górach.</p>
                     </div>
                     
                     <div class="col-1">
@@ -79,6 +93,15 @@
             <div class="wrapper">
                 <h2>portfolio</h2>
                     <ul class="portfolio__project row">
+                       <li class="portfolio__project__item">
+                            <figure class="portfolio__project__item--app-project">
+                                <img src="img/Strony-WP-007.jpg" alt="Mateusz Pośpiech, warsaw games show website">
+                                <figcaption>WarsawGamesShow - jedne z największych targów gier w Polsce. Projekt dla współorganizatorów Warsaw Comic Con.<br><span>Technologie: HTML, CSS, JavaScript.</span></figcaption>
+                            </figure>
+                            <div class="portfolio__project__hovered">
+                                <a href="http://warsawgamesshow.eu/" target="_blank" rel="nofollow noopener"><div class="portfolio__project__hovered__button">www</div></a>
+                            </div>
+                        </li>
                         <li class="portfolio__project__item">
                             <figure class="portfolio__project__item--app-project">
                                 <img src="img/Projekty7.jpg" alt="Mateusz Pośpiech, github users finder">
@@ -88,7 +111,6 @@
                                 <a href="https://github.com/MateuszPospiech/React-weather-app" target="_blank" rel="nofollow noopener"><div class="portfolio__project__hovered__button">GitHub</div></a> 
                                 <a href="http://mateuszpospiech.pl/weather-app/" target="_blank" rel="nofollow noopener"><div class="portfolio__project__hovered__button">www</div></a>
                             </div>
-                        </li>
                         </li>
                         <li class="portfolio__project__item">
                             <figure class="portfolio__project__item--app-project">
